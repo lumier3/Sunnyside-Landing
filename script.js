@@ -2,11 +2,12 @@ const navlinkTag = document.querySelector(".navlinks");
 const MenuTag = document.querySelector(".fa-bars");
 const fasolidTag = document.querySelector(".fa-xmark");
 
+
 MenuTag.addEventListener("click", () => {
-    navlinkTag.style.right = "0"
+    navlinkTag.classList.add("toshow");
     
 });
 
 fasolidTag.addEventListener("click", () => {
-    navlinkTag.style.right = "-100%"
+    navlinkTag.classList.remove("toshow");
 })

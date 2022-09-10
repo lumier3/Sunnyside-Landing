@@ -323,13 +323,17 @@ nav .fa-solid {
         height: 50vh;
         width: 300px;
         top: 0;
-        right: -100%;
+        right: 0px;
         text-align: left;
         z-index: 2;
-        transition: 0.5s;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
+        transition: display 1.5s ease-in-out;
+        border-radius: 10px;
+        display: none;
        
+    }
+
+    .toshow {
+        display: block;
     }
 
     .navlinks ul {
